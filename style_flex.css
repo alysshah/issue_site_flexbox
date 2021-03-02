@@ -1,0 +1,231 @@
+/* styles the whole html element */
+* {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+/* styles title link "surge of anti-asian harrassment and violece in the US"*/
+a.one {
+  text-decoration: none;
+  color: white;
+}
+
+/* styles the two links to the other 2 pages on the home page */
+a.two {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  /* to create a smooth transition when going back from hover to not hovered */
+  transition: all 300ms;
+}
+
+/* when these two page links are hovered, hte size increases */
+a.two:hover {
+  font-size: 400%;
+  /* transition to make the increase in size smoother */
+  transition: all 300ms;
+}
+
+/* background image */
+.background {
+  /* covers the whole screen */
+  height: 100vh;
+  background-image:
+    /* linear gradient overlay */
+    linear-gradient(45deg, rgba(54,34,150,0.55) 0%, rgba(200,50,50,0.8) 80%),
+    url("background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* styles main page title on home page */
+.title {
+  padding: 15px 20px;
+  font-size: 65px;
+  width: 75%;
+  font-weight: bold;
+}
+
+/* styles the page links section on the home page */
+.links {
+  /* flex to allow the two containers info and ressources to be next to each other */
+  display: flex;
+  text-align: center;
+  padding-top: 120px;
+  width: 70%;
+  /* aligns container horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/* styles info and ressoucres containers, flex: 1 to make them the same size and be placed side by side */
+.info {
+  flex: 1;
+}
+.ressources {
+  flex: 1;
+}
+
+/* .credit {
+  position: absolute;
+  margin: -10px 0;
+  right: 30px;
+  bottom: 15px;
+  color: white;
+  font-style: italic;
+} */
+
+/* styles header on pages other than home */
+.header2 {
+  height: 200px;
+  width: 100%;
+  background-image:
+    linear-gradient(45deg, rgba(54,34,150,0.55) 0%, rgba(200,50,50,0.8) 80%),
+    url("background1.jpg");
+}
+
+/* styles title on pages other than home */
+.title2 {
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0px 20px;
+  font-size: 50px;
+  width: 75%;
+  margin: 0;
+  position: relative;
+  /* to center vertically */
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* black strip under header on pages other than home */
+.subheader {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+/* subtitle in subheader */
+.subtitle {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  position: relative;
+  /* centers vertcically within subheader */
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* everything under the subheader on info page */
+.info-body {
+  /* padding: 30px 50px; */
+}
+
+/* everything under te subheader on ressources page */
+.ressources-body {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 85%;
+  /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* places divs side by side, same as page links on home page */
+.ressources-body1 {
+  flex: 1;
+  padding: 0px 20px;
+}
+.ressources-body2 {
+  flex: 1;
+  padding: 0px 20px;
+}
+
+/* styles list element */
+li {
+  padding: 5px 0;
+}
+
+/* styles paragraph element */
+p {
+  /* text-indent: 50px; */
+  font-size: 18px;
+  padding: 20px 50px;
+}
+
+/* styles first letter of first paragraph to create drop cap */
+.intro:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.intro {
+  /* color: #a3081e; */
+  /* font-style: italic; */
+  font-weight: bold;
+}
+
+.stat {
+  font-size: 20vh;
+}
+
+.stat-text {
+  width: 45%;
+  font-size: 27px;
+  padding: 0px 30px;
+}
+
+.stat-text em {
+  font-style: normal;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.info-stat1 {
+  display: flex;
+  padding: 70px 0px;
+  justify-content: center;
+  align-items: center;
+  color: #a3081e;
+  flex-direction: row-reverse;
+  text-align: right;
+
+}
+
+.info-stat2 {
+  display: flex;
+  padding: 70px 0px;
+  background-color: #a3081e;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.wrap {
+  display: flex;
+}
+
+
+.pic {
+  padding: 20px 20px;
+  text-align: right;
+}
+
+img {
+  width: 600px;
+}
+
+p.caption {
+  font-style: italic;
+  padding: 0px 0;
+  font-size: 13px;
+  align-content: center;
+}
